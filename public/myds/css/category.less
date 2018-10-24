@@ -1,0 +1,59 @@
+
+@sgFont: #887c80;
+@sgColor: #f5829f;
+
+.sg_category{
+    position: fixed;
+    top: 44px;
+    bottom: 50px;
+    width: 100%;
+    overflow: hidden;
+    background-color: #eee;
+    .category_left {
+        position: relative;
+        width: 80px;
+        height: 100%;
+        text-align: center;
+        float: left;
+        ul {
+            li {
+                
+                a{
+                    display: block;
+                    height: 45px; 
+                    line-height: 45px;
+                    border-bottom:1px solid #887c80;
+                    border-right: 1px solid #887c80; 
+                    background: #fff;
+                }
+                &.active a{
+                    background: #eee;
+                    color: @sgColor;
+                    border-right: 1px solid transparent; 
+                }
+            }
+        }
+    }
+    .category_right {
+        position: relative;
+        margin-left: 90px;
+        width: auto;
+        height: 100%;
+        overflow: hidden;
+        ul{
+            background-color: #fff;
+            li{
+                float: left;
+                width: 33.333%;
+                a{
+                    width: 100%;
+                    display: block;
+                    text-align: center;
+                    img{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}

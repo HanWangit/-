@@ -1,0 +1,32 @@
+.mui-scroll-wrapper {
+  margin: 44px 0 50px 0;
+}
+.sg_search .navSearch {
+  margin: 10px;
+  display: flex;
+  border: 1px solid #f5829f;
+}
+.sg_search .navSearch input {
+  flex: 1;
+  height: 28px;
+  font-size: 14px;
+  border: none;
+  margin: 0;
+  color: #887c80;
+}
+.sg_search .navSearch button {
+  height: 28px;
+  width: 60px;
+  border: none;
+  border-radius: 0;
+  background: #f5829f;
+}
+.sg_search .clearHistory {
+  margin: 0 10px 10px;
+}
+.sg_search .clearHistory span {
+  font-size: 12px;
+}
+.sg_search .clearHistory span .mui-icon {
+  font-size: 16px;
+}

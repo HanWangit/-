@@ -1,0 +1,75 @@
+.mui-scroll-wrapper {
+  margin: 44px 0 50px 0;
+}
+.sg_banner .mui-slider .mui-indicator.mui-active {
+  background: #f5829f;
+}
+.sg_banner .nav_list {
+  width: 100%;
+  padding: 10px;
+}
+.sg_banner .nav_list a {
+  width: 33.333%;
+  float: left;
+}
+.sg_banner .nav_list a img {
+  width: 100%;
+}
+.sg_banner .brand {
+  padding: 0 10px;
+}
+.sg_banner .brand > img {
+  width: 100%;
+}
+.sg_banner .brand .brand_link {
+  padding: 10px 0;
+}
+.sg_banner .brand .brand_link a {
+  width: 25%;
+  float: left;
+}
+.sg_banner .brand .brand_link a img {
+  width: 100%;
+}
+.sg_banner .product {
+  padding: 0 10px;
+}
+.sg_banner .product > img {
+  width: 100%;
+}
+.sg_banner .product > ul li {
+  width: 50%;
+  padding: 5px;
+  float: left;
+}
+.sg_banner .product > ul li a {
+  display: block;
+  padding: 5px;
+  box-shadow: 0 0 5px #887c80;
+  text-align: center;
+}
+.sg_banner .product > ul li a img {
+  width: 100%;
+}
+.sg_banner .product > ul li a > span {
+  display: block;
+  height: 50px;
+  padding: 5px;
+  overflow: hidden;
+}
+.sg_banner .product > ul li a > p {
+  font-size: 12px;
+  margin-bottom: 0;
+}
+.sg_banner .product > ul li a > p span:first-child {
+  color: #f5829f;
+}
+.sg_banner .product > ul li a > p span:last-child {
+  text-decoration: line-through;
+}
+.sg_banner .product > ul li a button {
+  margin: 5px 0;
+  border: none;
+  background: #f5829f;
+  color: #fff;
+}
