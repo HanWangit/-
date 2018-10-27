@@ -21,12 +21,12 @@
   border-radius: 0;
   background: #f5829f;
 }
-.sg_search .clearHistory {
+.sg_search .History {
   margin: 0 10px 10px;
 }
-.sg_search .clearHistory span {
+.sg_search .History span {
   font-size: 12px;
 }
-.sg_search .clearHistory span .mui-icon {
+.sg_search .History span .mui-icon {
   font-size: 16px;
 }

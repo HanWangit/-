@@ -1,0 +1,68 @@
+.mui-scroll-wrapper {
+    padding:  44px 0 50px 0;
+    box-sizing: border-box;
+}
+.sg_searchlist{
+    margin: 10px;
+    width: auto;
+    position: relative;
+    > span {
+        float: left;
+        width: 50%;
+        height: 37px;
+        line-height: 37px;
+        background-color: #f5829f;
+        text-align: center;
+        color: #fff;
+        i{
+            font-size: 18px;
+        }
+    }
+    //搜索结果start
+    .product {
+        overflow: hidden;
+        width: 100%;
+        padding: 5px 0 0;
+        >img {
+            width: 100%;
+        }
+        >ul{
+            li {
+                width: 50%;
+                padding: 5px;
+                float: left;
+                a{
+                    display: block;
+                    padding: 5px;
+                    box-shadow: 0 0 5px #887c80;
+                    text-align: center;
+                    img{
+                        width: 100%;
+                    }
+                    >span {
+                        display: block;
+                        height: 50px;
+                        padding: 5px;
+                        overflow: hidden;
+                    }
+                    >p {
+                        font-size: 12px;
+                        margin-bottom: 0;
+                        span:first-child {
+                            color: #f5829f;
+                        }
+                        span:last-child {
+                            text-decoration: line-through;
+                        }
+                    }
+                    button {
+                        margin: 5px 0;
+                        border: none;
+                        background: #f5829f;
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+}

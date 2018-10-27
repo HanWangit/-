@@ -15,6 +15,7 @@ $(function(){
 		if(localStorage.getItem('keywords')){
 
 			var keywords = JSON.parse(localStorage.getItem('keywords'));
+			console.log(keywords);
 
 			keywords.push(keyword);
 

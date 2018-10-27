@@ -2,30 +2,30 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>闪购</title>
+	<title>搜索结果</title>
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<link rel="stylesheet" href="assets/mui/css/mui.min.css">
     <link rel="stylesheet" href="assets/mui/css/iconfont.css">
     <link rel="stylesheet" href="assets/fontAwesome/css/font-awesome.min.css">
 	<link rel="stylesheet" href="css/base.css">
-	<!-- <link rel="stylesheet" href="css/search.css"> -->
+	<link rel="stylesheet" href="css/search-list.css">
     <script src="assets/zepto/zepto.min.js"></script>
 	<script src="assets/mui/js/mui.min.js"></script>
     <script src="assets/artTemplate/template-native.js"></script>
     <script src="js/comm.js"></script>
-	<!-- <script src="js/search.js"></script> -->
+    <script src="js/search-list.js"></script>
 </head>
 <body>
 	<header class="mui-bar mui-bar-nav header">
-		<h1 class="mui-title">闪购电商</h1>
-		<a href="search.html" class="mui-icon mui-icon-search mui-pull-right"></a>
+        <a href="search.html" class="mui-icon mui-icon-back mui-pull-left"></a>
+		<h1 class="mui-title">搜索内容</h1>
 	</header>
 	<nav class="mui-bar mui-bar-tab footer">
 		<a class="mui-tab-item" href="index.html">
 			<span class="mui-icon mui-icon-home"></span>
 			<span class="mui-tab-label">首页</span>
 		</a>
-		<a class="mui-tab-item mui-active" href="category.html">
+		<a class="mui-tab-item" href="category.html">
 			<span class="mui-icon mui-icon-bars"></span>
 			<span class="mui-tab-label">分类</span>
 		</a>
@@ -38,8 +38,33 @@
 			<span class="mui-tab-label">会员中心</span>
 		</a>
 	</nav>
-	<div class="mui-scroll-wrapper">
+	<div class="mui-scroll-wrapper refresh">
+        <div class="mui-scroll sg_searchlist">
+           
+            <span type="button" class="price-Sort">价格<i class="mui-icon mui-icon-arrowdown"></i></span>
+            <span type="button" class="num-Sort">销量<i class="mui-icon mui-icon-arrowdown"></i></span>
 
-	</div>
+            <!-- 搜索结果start -->
+			<div class="product">
+                    <ul class="mui-clearfix">
+                    </ul>
+            </div>
+            <!-- 搜索结果end -->
+        </div>
+    </div>
+    <script id="showSearchlist" type="text/template">
+        <% for(var i=0; i<data.length;i++){ %>
+        <li><a href="javascript:;"><img src="<%=data[i].pic[0].picAddr %>" alt="">
+            <span>
+                <%=data[i].proName %>
+            </span>
+            <p>
+                <span>¥<%=data[i].price %></span>
+                <span>¥<%=data[i].oldPrice %></span>
+            </p>
+            <button>立即购买</button></a>
+        </li>
+        <% } %>
+    </script>
 </body>
 </html>
