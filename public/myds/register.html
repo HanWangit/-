@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>标题</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" href="assets/mui/css/mui.min.css">
+    <link rel="stylesheet" href="assets/mui/css/iconfont.css">
+    <link rel="stylesheet" href="assets/fontAwesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/base.css">
+    <script src="assets/zepto/zepto.min.js"></script>
+	<script src="assets/mui/js/mui.min.js"></script>
+    <script src="assets/artTemplate/template-native.js"></script>
+    <script src="js/comm.js"></script>
+    <script src="js/register.js"></script>
+    <style>
+    .mui-scroll-wrapper {
+        padding: 44px 0 50px 0;
+    }
+    .sg_register .mui-input-group:after{
+        height: 0;
+    }
+    .sg_register .mui-button-row {
+        padding: 5px 10px;
+    }
+    .sg_register .mui-button-row a {
+        margin-top: 10px;
+        font-size: 14px;
+        color: #f5829f;
+    }
+    .sg_register .mui-input-row{
+        color: #000;
+    }
+    .sg_register .register-btn{
+        width: 100%;
+        background-color: #f5829f;
+        border: 1px solid rgb(243, 114, 146);
+        line-height: 2;
+        margin-top: 10px;
+    }
+    .sg_register .getVerify {
+        position: absolute;
+        right: 5px;
+        top: 10px;
+        font-size: 12px;
+        color: #999;
+    }
+    </style>
+</head>
+<body>
+	<header class="mui-bar mui-bar-nav header">
+        <a href="search.html" class="mui-icon mui-icon-back mui-pull-left"></a>
+		<h1 class="mui-title">注册</h1>
+	</header>
+	<nav class="mui-bar mui-bar-tab footer">
+		<a class="mui-tab-item" href="index.html">
+			<span class="mui-icon mui-icon-home"></span>
+			<span class="mui-tab-label">首页</span>
+		</a>
+		<a class="mui-tab-item" href="category.html">
+			<span class="mui-icon mui-icon-bars"></span>
+			<span class="mui-tab-label">分类</span>
+		</a>
+		<a class="mui-tab-item" href="cart.html">
+			<span class="mui-icon iconfont icon-gouwuche"></span>
+			<span class="mui-tab-label">购物车</span>
+		</a>
+		<a class="mui-tab-item" href="user.html">
+			<span class="mui-icon mui-icon-person"></span>
+			<span class="mui-tab-label">会员中心</span>
+		</a>
+	</nav>
+	<div class="mui-scroll-wrapper sg_register">
+        <form class="mui-input-group">
+            <div class="mui-input-row">
+                <label>用户名</label>
+            <input type="text" class="mui-input-clear" placeholder="请输入用户名" id="username">
+            </div>
+            <div class="mui-input-row">
+                <label>手机号</label>
+            <input type="text" class="mui-input-clear" placeholder="请输入手机号" id="mobile">
+            </div>
+            <div class="mui-input-row">
+                <label>密码</label>
+                <input type="password" class="mui-input-password" placeholder="请输入密码" id="password">
+            </div>
+            <div class="mui-input-row">
+                <label>确认密码</label>
+                <input type="password" class="mui-input-password okpassword" placeholder="请确认密码">
+            </div>
+            <div class="mui-input-row">
+                <label>认证码</label>
+                <input type="text" class="" placeholder="请输入认证码" id="vCode">
+                <a href="javascript:;" class="getVerify mui-pull-right" id="getCode">获取验证码</a>
+            </div>
+            <div class="mui-button-row">
+                <button type="button" class="mui-btn mui-btn-primary register-btn" >注册</button>
+                <a href="login.html" class="mui-pull-right">立即登录</a>
+            </div>
+        </form>
+	</div>
+</body>
+</html>

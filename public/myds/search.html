@@ -13,7 +13,7 @@
 	<script src="assets/mui/js/mui.min.js"></script>
     <script src="assets/artTemplate/template-native.js"></script>
     <script src="js/comm.js"></script>
-	<!-- <script src="js/search.js"></script> -->
+	<script src="js/search.js"></script>
 </head>
 <body>
     <header class="mui-bar mui-bar-nav header">
@@ -44,19 +44,23 @@
                 <input type="text" placeholder="搜索您喜欢的商品">
                 <button>搜索</button>
             </div>
-            <div class="clearHistory mui-clearfix">
+            <div class="History mui-clearfix">
                 <span class="mui-pull-left">搜索历史</span>
-                <span class="mui-pull-right">
+                <span class="mui-pull-right clearHistory">
                     <i class="mui-icon mui-icon-trash"></i>
-                    搜索历史
+                    清空历史
                 </span>
             </div>
-            <ul class="mui-table-view">
-                <li class="mui-table-view-cell">Item 1</li>
-                <li class="mui-table-view-cell">Item 2</li>
-                <li class="mui-table-view-cell">Item 3</li>
+            <ul class="mui-table-view showHistory">
+                
             </ul>
         </div>
     </div>
+    <script id="getHistory" type="text/template">
+
+        <% for(var i=0;i<data.length;i++){ %>
+            <li class="mui-table-view-cell"><%=data[i] %></li>
+        <% } %>
+    </script>
 </body>
 </html>

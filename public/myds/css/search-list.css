@@ -1,0 +1,65 @@
+.mui-scroll-wrapper {
+  padding: 44px 0 50px 0;
+  box-sizing: border-box;
+}
+.sg_searchlist {
+  margin: 10px;
+  width: auto;
+  position: relative;
+}
+.sg_searchlist > span {
+  float: left;
+  width: 50%;
+  height: 37px;
+  line-height: 37px;
+  background-color: #f5829f;
+  text-align: center;
+  color: #fff;
+}
+.sg_searchlist > span i {
+  font-size: 18px;
+}
+.sg_searchlist .product {
+  overflow: hidden;
+  width: 100%;
+  padding: 5px 0 0;
+}
+.sg_searchlist .product > img {
+  width: 100%;
+}
+.sg_searchlist .product > ul li {
+  width: 50%;
+  padding: 5px;
+  float: left;
+}
+.sg_searchlist .product > ul li a {
+  display: block;
+  padding: 5px;
+  box-shadow: 0 0 5px #887c80;
+  text-align: center;
+}
+.sg_searchlist .product > ul li a img {
+  width: 100%;
+}
+.sg_searchlist .product > ul li a > span {
+  display: block;
+  height: 50px;
+  padding: 5px;
+  overflow: hidden;
+}
+.sg_searchlist .product > ul li a > p {
+  font-size: 12px;
+  margin-bottom: 0;
+}
+.sg_searchlist .product > ul li a > p span:first-child {
+  color: #f5829f;
+}
+.sg_searchlist .product > ul li a > p span:last-child {
+  text-decoration: line-through;
+}
+.sg_searchlist .product > ul li a button {
+  margin: 5px 0;
+  border: none;
+  background: #f5829f;
+  color: #fff;
+}

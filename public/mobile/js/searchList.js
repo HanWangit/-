@@ -80,8 +80,6 @@ function findProduct(){
 	if(!This){
 		This = this;
 	}
-	
-	console.log(This)
 
 	if(!isLast && !loading){
 
