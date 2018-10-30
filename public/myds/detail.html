@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>闪购</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" href="assets/mui/css/mui.min.css">
+    <link rel="stylesheet" href="assets/mui/css/iconfont.css">
+    <link rel="stylesheet" href="assets/fontAwesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/detail.css">
+    <script src="assets/zepto/zepto.min.js"></script>
+	<script src="assets/mui/js/mui.min.js"></script>
+    <script src="assets/artTemplate/template-native.js"></script>
+    <script src="js/comm.js"></script>
+	<script src="js/detail.js"></script>
+</head>
+<body>
+	<header class="mui-bar mui-bar-nav header">
+        <a href="search.html" class="mui-icon mui-icon-back mui-pull-left"></a>
+		<h1 class="mui-title">商品详情</h1>
+	</header>
+	<nav class="mui-bar mui-bar-tab footer">
+		<a class="mui-tab-item" href="index.html">
+			<span class="mui-icon mui-icon-home"></span>
+			<span class="mui-tab-label">首页</span>
+		</a>
+		<a class="mui-tab-item" href="category.html">
+			<span class="mui-icon mui-icon-bars"></span>
+			<span class="mui-tab-label">分类</span>
+		</a>
+		<a class="mui-tab-item" href="cart.html">
+			<span class="mui-icon iconfont icon-gouwuche"></span>
+			<span class="mui-tab-label">购物车</span>
+		</a>
+		<a class="mui-tab-item" href="user.html">
+			<span class="mui-icon mui-icon-person"></span>
+			<span class="mui-tab-label">会员中心</span>
+		</a>
+	</nav>
+	<div class="mui-scroll-wrapper">
+        <div class="mui-scroll sg_detail">
+            <div id="getDetail" ></div>
+            <!-- 数量 -->
+            <div class="detail_num">
+                数量：
+                <div class="mui-numbox" id="numMax" data-numbox-min="1" data-numbox-max="10">
+                    <button class="mui-btn mui-btn-numbox-minus" type="button">-</button>
+                    <input id="test" class="mui-input-numbox" type="number" value="1">
+                    <button class="mui-btn mui-btn-numbox-plus" type="button">+</button>
+                </div>
+                剩余：<span>1</span> 件
+            </div>
+            <!-- 按钮 -->
+            <div class="detail-buttons">
+                <a href="cart.html">查看购物车</a>
+                <a href="cart.html">加入购物车</a>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script type="text/template" id="getDetailTpl">
+        
+            <img src="<%=pic[0].picAddr%>" alt="">
+            <!-- 标题 -->
+            <div class="detail_title">
+                <%=proName %>
+            </div>
+            <!-- 价格 -->
+            <div class="detail_price">
+                价格：
+                <span>¥<%=price %></span>
+                <span>¥<%=oldPrice %></span>
+            </div>
+            <!-- 尺码 -->
+            <div class="detail_size">
+                尺码：
+                
+                <span class="active">35</span>
+                <span>36</span>
+                <span>37</span>
+                <span>38</span>
+                <span>39</span>
+                <span>40</span>
+                <span>41</span>
+                <span>42</span>
+                <span>43</span>
+                <span>44</span>
+                <span>45</span>
+                <span>46</span>
+            </div>
+            
+    
+    
+    </script>
+</body>
+</html>

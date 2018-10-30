@@ -56,6 +56,8 @@ $(function(){
         pullfresh();
       })
 
+
+
 })
 
 function pullfresh (){

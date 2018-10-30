@@ -1,0 +1,77 @@
+.mui-scroll-wrapper{
+    margin: 44px 0 50px 0;
+}
+.sg_detail {
+    color: #000;
+    img {
+        width: 100%;
+        display: block;
+    }
+    .detail_title{
+        font-size: 16px;
+        padding: 10px;
+        
+    }
+    .detail_price{
+        height: 47px;
+        padding: 10px;
+        border-top: 1px solid #ccc;
+        border-bottom: 1px solid #ccc;
+        span:first-child {
+            color: #f5829f;
+            font-size: 25px;
+        }
+        span:last-child {
+            margin-left: 5px;
+            text-decoration: line-through;
+            color: #ccc;
+        }
+    }
+    .detail_size {
+        border-bottom: 1px solid #ccc;
+        padding: 10px;
+        span {
+            margin-top: 5px;
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            line-height: 28px;
+            text-align: center;
+            border: 1px solid #ccc;
+            &.active {
+                background-color: #f5829f;
+                color: #fff;
+            }
+        }
+    }
+    .detail_num {
+        padding: 10px;
+        .mui-numbox {
+            width: 100px;
+            height: 30px;
+            padding: 0 30px;
+            .mui-btn {
+                width: 30px;
+            }
+        }
+    }
+    .detail-buttons {
+        padding: 10px;
+        height: 54px;
+        line-height: 34px;
+        display: flex;
+        > a {
+            flex: 1;
+            height: 100%;
+            text-align: center;
+            color: #fff;
+            &:first-child {
+                background-color: #f5829f;
+            }
+            &:last-child {
+                background-color: rgb(69, 190, 238);
+            }
+        }
+    }
+
+}
