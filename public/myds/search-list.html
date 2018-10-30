@@ -54,7 +54,7 @@
     </div>
     <script id="showSearchlist" type="text/template">
         <% for(var i=0; i<data.length;i++){ %>
-        <li><a href="javascript:;"><img src="<%=data[i].pic[0].picAddr %>" alt="">
+        <li><a href="detail.html?id=<%=data[i].id %>" id="searchId"><img src="<%=data[i].pic[0].picAddr %>" alt="">
             <span>
                 <%=data[i].proName %>
             </span>

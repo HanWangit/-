@@ -32,6 +32,7 @@ $(function(){
     var keywords = [];
     // 页面一加载,就执行获取历史
     if(localStorage.getItem('keywords')){
+        
         keywords= JSON.parse(localStorage.getItem('keywords'));
         console.log(keywords);
         var html = template("getHistory",{data:keywords});
@@ -41,7 +42,7 @@ $(function(){
     //清空历史
     $(".clearHistory").on("tap",function(){
         localStorage.removeItem('keywords');
-        
+        keywords = [];
        $(".showHistory").html("");
     })
 })
